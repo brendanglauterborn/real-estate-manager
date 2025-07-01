@@ -1,0 +1,147 @@
+/* ListingsList CSS - Professional styling for Keller Williams */
+:root {
+  --kw-red: #800020;
+  --kw-gray: #333333;
+  --kw-light-gray: #f5f5f5;
+  --kw-dark-gray: #444444;
+  --kw-text: #333333;
+  --kw-success: #28a745;
+  --kw-warning: #ffc107;
+  --kw-card-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --transition-standard: all 0.3s ease;
+}
+
+/* Listings Layout */
+.listings-wrapper {
+  background-color: #f6f7fb;
+  min-height: calc(100vh - 60px);
+  padding: 20px 0 40px;
+}
+
+.listings-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.listings-header {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.listings-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--kw-text);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.listings-header .icon-accent {
+  color: var(--kw-red);
+  margin-right: 12px;
+  font-size: 22px;
+}
+
+/* Card styling */
+.listings-card {
+  background: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: var(--kw-card-shadow);
+  overflow: hidden;
+  transition: var(--transition-standard);
+}
+
+.listings-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.listings-card .card-header {
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 16px 20px;
+}
+
+.listings-card .card-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--kw-text);
+  display: flex;
+  align-items: center;
+}
+
+/* Table styling */
+.listings-table {
+  margin-bottom: 0;
+}
+
+.listings-table th {
+  font-weight: 600;
+  color: #555;
+  border-bottom-width: 1px;
+  background-color: #f9f9f9;
+}
+
+.listings-table td {
+  vertical-align: middle;
+}
+
+.listings-table .property-info {
+  line-height: 1.4;
+}
+
+/* Button styling */
+.btn-kw-primary {
+  background-color: var(--kw-red);
+  border-color: var(--kw-red);
+  color: white;
+  transition: var(--transition-standard);
+}
+
+.btn-kw-primary:hover {
+  background-color: #680018;
+  border-color: #680018;
+  transform: translateY(-1px);
+}
+
+.btn-kw-outline {
+  border-color: var(--kw-red);
+  color: var(--kw-red);
+  background-color: transparent;
+  transition: var(--transition-standard);
+}
+
+.btn-kw-outline:hover {
+  background-color: var(--kw-red);
+  color: white;
+}
+
+/* Status badges */
+.badge-active {
+  background-color: var(--kw-success);
+}
+
+.badge-pending {
+  background-color: var(--kw-warning);
+  color: #212529;
+}
+
+.badge-sold {
+  background-color: var(--kw-red);
+}
+
+/* Empty state */
+.empty-state {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.empty-state p {
+  color: #6c757d;
+  margin-bottom: 20px;
+} 

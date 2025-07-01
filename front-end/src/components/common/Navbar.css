@@ -1,0 +1,357 @@
+/* Navbar CSS - Professional styling for Keller Williams */
+:root {
+  --kw-red: #800020;
+  --kw-gray: #333333;
+  --kw-light-gray: #f5f5f5;
+  --kw-dark-gray: #444444;
+  --kw-hover-red: #910101;
+  --navbar-height: 80px;
+  --transition-standard: all 0.3s ease;
+}
+
+/* Main Navbar Styling */
+.main-navbar {
+  height: var(--navbar-height);
+  background-color: var(--kw-gray);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  z-index: 1030;
+  transition: var(--transition-standard);
+  position: relative;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  height: 100%;
+  position: relative;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  height: 65px;
+}
+
+/* Brand Logo & Text */
+.brand-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 20px;
+  position: relative;
+  z-index: 25;
+}
+
+.navbar-logo {
+  height: 100%;
+  width: auto;
+  background-color: white;
+  padding: 10px;
+  margin-right: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+  border: none;
+  border-radius: 0;
+  min-height: 60px;
+  position: relative;
+  z-index: 20;
+  transform: scale(1.1);
+  opacity: 1;
+  filter: none;
+  isolation: isolate;
+}
+
+/* Logo fallback for when image doesn't load */
+.logo-fallback {
+  height: 100%;
+  width: 60px;
+  background-color: white;
+  color: var(--kw-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-size: 28px;
+  border: none;
+  border-radius: 0;
+  min-height: 60px;
+  position: relative;
+  z-index: 20;
+  transform: scale(1.1);
+  opacity: 1;
+  filter: none;
+  isolation: isolate;
+}
+
+.brand-container:hover .navbar-logo {
+  transform: scale(1.15);
+}
+
+.brand-text {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+/* Navigation Items */
+.main-nav {
+  height: 100%;
+  margin-left: 15px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500;
+  transition: var(--transition-standard);
+  padding: 0 15px !important;
+  height: 100%;
+  position: relative;
+}
+
+.nav-item:hover {
+  color: white !important;
+}
+
+.nav-item.active {
+  color: white !important;
+}
+
+.nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  height: 3px;
+  background-color: var(--kw-red);
+  border-radius: 2px 2px 0 0;
+}
+
+.nav-icon {
+  margin-right: 8px;
+}
+
+/* User Dropdown */
+.user-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.user-dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 0;
+  height: 100%;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--kw-red);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.user-role {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Dropdown Menu */
+.user-dropdown-menu {
+  padding: 0;
+  min-width: 220px;
+  border: none;
+  margin-top: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.dropdown-user-details {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.dropdown-user-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.dropdown-user-email {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+.dropdown-item {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  transition: var(--transition-standard);
+}
+
+.dropdown-icon {
+  margin-right: 10px;
+  font-size: 14px;
+  width: 16px;
+  opacity: 0.8;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(180, 1, 1, 0.05);
+}
+
+.logout-item {
+  color: var(--kw-red);
+}
+
+.dropdown-divider {
+  margin: 0;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-auth {
+  padding: 8px 16px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.btn-login {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+.btn-register {
+  background-color: var(--kw-red);
+  border-color: var(--kw-red);
+}
+
+.btn-register:hover {
+  background-color: var(--kw-hover-red);
+  border-color: var(--kw-hover-red);
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+.custom-toggler {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+.custom-toggler::before,
+.custom-toggler::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+  transition: var(--transition-standard);
+}
+
+.custom-toggler::before {
+  top: 8px;
+}
+
+.custom-toggler::after {
+  bottom: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: var(--kw-gray);
+    padding: 15px;
+    margin: 0 -12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-item {
+    height: auto;
+    padding: 12px 15px !important;
+  }
+  
+  .nav-item.active::after {
+    display: none;
+  }
+  
+  .nav-item.active {
+    background-color: rgba(180, 1, 1, 0.1);
+  }
+  
+  .brand-text {
+    font-size: 1.1rem;
+  }
+  
+  .user-dropdown {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .navbar-logo {
+    height: 60px;
+    width: auto;
+  }
+  
+  .auth-buttons {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .btn-auth {
+    flex: 1;
+  }
+}
+
+/* Fix for content positioning due to fixed navbar */
+body {
+  padding-top: var(--navbar-height);
+} 

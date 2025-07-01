@@ -1,0 +1,220 @@
+/* ListingDetail CSS - Professional styling for Keller Williams */
+:root {
+  --kw-red: #800020;
+  --kw-gray: #333333;
+  --kw-light-gray: #f5f5f5;
+  --kw-dark-gray: #444444;
+  --kw-text: #333333;
+  --kw-success: #28a745;
+  --kw-warning: #ffc107;
+  --kw-card-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --transition-standard: all 0.3s ease;
+}
+
+/* Listing Detail Layout */
+.listing-detail-wrapper {
+  background-color: #f6f7fb;
+  min-height: calc(100vh - 60px);
+  padding: 20px 0 40px;
+}
+
+.listing-detail-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Back button */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  color: var(--kw-gray);
+  background-color: transparent;
+  border: 1px solid #dee2e6;
+  transition: var(--transition-standard);
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  background-color: #f8f9fa;
+  color: var(--kw-red);
+  border-color: #ced4da;
+  transform: translateY(-1px);
+}
+
+.back-button .icon {
+  margin-right: 8px;
+}
+
+/* Listing header */
+.listing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.listing-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--kw-text);
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.listing-header .listing-badge {
+  margin-left: 15px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+/* Card styling */
+.listing-card {
+  background: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: var(--kw-card-shadow);
+  overflow: hidden;
+  transition: var(--transition-standard);
+  margin-bottom: 25px;
+}
+
+.listing-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.listing-card .card-body {
+  padding: 25px;
+}
+
+.listing-card h5 {
+  color: var(--kw-red);
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.listing-card h5 .icon {
+  margin-right: 8px;
+}
+
+.listing-card p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.listing-card strong {
+  color: var(--kw-dark-gray);
+}
+
+.listing-description {
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Tabs styling */
+.listing-tabs {
+  margin-bottom: 30px;
+}
+
+.listing-tabs .nav-link {
+  color: var(--kw-gray);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.listing-tabs .nav-link.active {
+  color: var(--kw-red);
+  font-weight: 600;
+}
+
+.listing-tabs .nav-link .icon {
+  margin-right: 8px;
+}
+
+/* Table styling */
+.listing-table {
+  margin-bottom: 0;
+}
+
+.listing-table th {
+  font-weight: 600;
+  color: #555;
+  border-bottom-width: 1px;
+  background-color: #f9f9f9;
+}
+
+.listing-table td {
+  vertical-align: middle;
+}
+
+/* Action card */
+.action-card .card-header {
+  background-color: var(--kw-red);
+  color: white;
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+.action-button {
+  background-color: var(--kw-red);
+  border-color: var(--kw-red);
+  color: white;
+  transition: var(--transition-standard);
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+.action-button:hover {
+  background-color: #680018;
+  border-color: #680018;
+  transform: translateY(-1px);
+}
+
+.action-button.outline {
+  background-color: white;
+  border-color: var(--kw-red);
+  color: var(--kw-red);
+}
+
+.action-button.outline:hover {
+  background-color: var(--kw-red);
+  color: white;
+}
+
+/* Modal styling */
+.kw-modal .modal-header {
+  background-color: var(--kw-red);
+  color: white;
+  border-bottom: none;
+}
+
+.kw-modal .modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.kw-form-label {
+  font-weight: 600;
+  color: var(--kw-dark-gray);
+  margin-bottom: 8px;
+}
+
+.kw-submit-button {
+  background-color: var(--kw-red);
+  border-color: var(--kw-red);
+  color: white;
+  transition: var(--transition-standard);
+  padding: 10px 0;
+}
+
+.kw-submit-button:hover {
+  background-color: #680018;
+  border-color: #680018;
+  transform: translateY(-1px);
+} 

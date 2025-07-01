@@ -1,0 +1,226 @@
+/* Appointments CSS - Professional styling for Keller Williams */
+:root {
+  --kw-red: #800020;
+  --kw-gray: #333333;
+  --kw-light-gray: #f5f5f5;
+  --kw-dark-gray: #444444;
+  --kw-text: #333333;
+  --kw-success: #28a745;
+  --kw-warning: #ffc107;
+  --kw-card-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --transition-standard: all 0.3s ease;
+}
+
+/* Appointments Layout */
+.appointments-wrapper {
+  background-color: #f6f7fb;
+  min-height: calc(100vh - 60px);
+  padding: 20px 0 40px;
+}
+
+.appointments-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.appointments-header {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.appointments-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--kw-text);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.appointments-header .icon-accent {
+  color: var(--kw-red);
+  margin-right: 12px;
+  font-size: 22px;
+}
+
+/* Card styling */
+.appointments-card {
+  background: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: var(--kw-card-shadow);
+  overflow: hidden;
+  transition: var(--transition-standard);
+}
+
+.appointments-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Search and filters */
+.appointments-filters {
+  margin-bottom: 20px;
+}
+
+.appointments-search-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: var(--transition-standard);
+}
+
+.appointments-search-input:focus {
+  border-color: var(--kw-red);
+  box-shadow: 0 0 0 0.2rem rgba(128, 0, 32, 0.25);
+}
+
+.appointments-search-icon {
+  background-color: var(--kw-red);
+  color: white;
+  border-color: var(--kw-red);
+}
+
+.appointments-filter-select {
+  transition: var(--transition-standard);
+}
+
+.appointments-filter-select:focus {
+  border-color: var(--kw-red);
+  box-shadow: 0 0 0 0.2rem rgba(128, 0, 32, 0.25);
+}
+
+/* Table styling */
+.appointments-table {
+  margin-bottom: 0;
+}
+
+.appointments-table th {
+  font-weight: 600;
+  color: #555;
+  border-bottom-width: 1px;
+  background-color: #f9f9f9;
+  white-space: nowrap;
+}
+
+.appointments-table th .icon {
+  color: var(--kw-red);
+}
+
+.appointments-table td {
+  vertical-align: middle;
+  padding: 12px 16px;
+}
+
+.appointments-table .client-info {
+  line-height: 1.4;
+}
+
+.appointments-table .client-email {
+  font-size: 85%;
+  color: #6c757d;
+}
+
+/* Status badges */
+.badge-today {
+  background-color: var(--kw-warning);
+  color: #212529;
+}
+
+.badge-upcoming {
+  background-color: var(--kw-success);
+}
+
+.badge-past {
+  background-color: var(--kw-gray);
+}
+
+/* Button styling */
+.btn-kw-primary {
+  background-color: var(--kw-red);
+  border-color: var(--kw-red);
+  color: white;
+  transition: var(--transition-standard);
+}
+
+.btn-kw-primary:hover {
+  background-color: #680018;
+  border-color: #680018;
+  transform: translateY(-1px);
+}
+
+.btn-kw-outline {
+  border-color: var(--kw-red);
+  color: var(--kw-red);
+  background-color: transparent;
+  transition: var(--transition-standard);
+}
+
+.btn-kw-outline:hover {
+  background-color: var(--kw-red);
+  color: white;
+}
+
+/* Action buttons */
+.appointment-action-btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.appointment-action-btn:last-child {
+  margin-right: 0;
+}
+
+/* Empty state */
+.appointments-empty-state {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.appointments-empty-state h5 {
+  color: var(--kw-dark-gray);
+  margin-bottom: 10px;
+}
+
+.appointments-empty-state p {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+/* Modal styling */
+.appointment-modal .modal-header {
+  background-color: var(--kw-red);
+  color: white;
+  border-bottom: none;
+}
+
+.appointment-modal .modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.appointment-form-label {
+  font-weight: 600;
+  color: var(--kw-dark-gray);
+  margin-bottom: 8px;
+}
+
+.appointment-submit-button {
+  background-color: var(--kw-red);
+  border-color: var(--kw-red);
+  color: white;
+  transition: var(--transition-standard);
+  padding: 10px 0;
+}
+
+.appointment-submit-button:hover {
+  background-color: #680018;
+  border-color: #680018;
+  transform: translateY(-1px);
+} 
