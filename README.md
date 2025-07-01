@@ -40,7 +40,7 @@ This system allows a real estate company to manage and track properties, agents,
 
   ## Author
 - Brendan Lauterborn  
-- Towson University — COSC 578: Database Management Systems I  
+- Towson University Database Management Systems I  
 - Responsible for backend development, database design, and API implementation  
 - [GitHub](https://github.com/brendanglauterborn)
 
