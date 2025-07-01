@@ -32,7 +32,7 @@ This system allows a real estate company to manage and track properties, agents,
 
 **Frontend**
 - React
-- JavaScript (or TypeScript if you use it)
+- JavaScript
 
 **Tools**
 - Postman (API testing)
