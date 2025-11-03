@@ -1,2 +1,8 @@
 /mvnw text eol=lf
 *.cmd text eol=crlf
+
+*.sql linguist-language=SQL
+
+*.xlsx linguist-documentation
+*.csv linguist-documentation
+*.md linguist-documentation
