@@ -43,7 +43,6 @@ This system allows a real estate company to manage and track properties, agents,
 - Hermela Abraham
 - Joseph Frishkorn
 - Tristan Weekes
-- 
 - Towson University Database Management Systems I  
 - I was Responsible for backend development, database design, and API implementation  
 - [GitHub](https://github.com/brendanglauterborn)
