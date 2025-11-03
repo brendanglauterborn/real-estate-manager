@@ -38,9 +38,14 @@ This system allows a real estate company to manage and track properties, agents,
 - Postman (API testing)
 - Git/GitHub
 
-  ## Author
-- Brendan Lauterborn  
+  ## Authors
+- Brendan Lauterborn
+- Hermela Abraham
+- Joseph Frishkorn
+- Tristan Weekes
+- 
 - Towson University Database Management Systems I  
-- Responsible for backend development, database design, and API implementation  
+- I was Responsible for backend development, database design, and API implementation  
 - [GitHub](https://github.com/brendanglauterborn)
+  
 
